@@ -20,6 +20,13 @@ main {
     background-color: var(--Dark-cyan);
 }
 
+main .pattern-top img{
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform: translate(50%, 50%);
+}
+
 main .container {
     position: absolute;
     top: 50%;
@@ -28,7 +35,7 @@ main .container {
 }
 
 main .card-component {
-    width: 375px;
+    width: 374px;
     background-color: white;
     border-radius: 20px;
 
@@ -43,7 +50,7 @@ main .card-component .card-perfil-img img{
     position: absolute;
     border: 6px solid white;
     border-radius: 50%;
-    top: 37%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -63,8 +70,9 @@ main .card-component .card-perfil-nome p{
 }
 
 main hr {
-    size: 0.01px;
-    border: 1px solid var(--Neutra-Dark-gray);
+    border-width: 0; 
+	height: 0.01px;
+	border-top-width: 1px;
 }
 
 main .card-interacao {
@@ -72,4 +80,10 @@ main .card-interacao {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    text-align: center;
+}
+
+main .card-interacao p {
+    color:var(--Neutra-Dark-gray);
+    font-size: 12px;
 }
